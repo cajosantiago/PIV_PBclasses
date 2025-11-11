@@ -49,9 +49,9 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Run SIFT keypoint extraction on all images in a folder.")
-    parser.add_argument("input_folder", help="Path to folder containing images")
-    parser.add_argument("--output", default="output", help="Folder to save .mat files (default: ./output)")
+    parser.add_argument("--input_folder", default="images", help="Path to folder containing images")
+    parser.add_argument("--output_folder", default="output", help="Folder to save .mat files (default: ./output)")
 
     args = parser.parse_args()
 
-    process_folder(args.input_folder, args.output)
+    process_folder(args.input_folder, args.output_folder)

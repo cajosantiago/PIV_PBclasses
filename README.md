@@ -15,7 +15,7 @@ docker build -t sift-extractor .
 Run the container, mounting your local image folder and output directory:
 
 ```bash
-docker run --rm   -v local_path/to/images:/app/images   -v $(pwd)/results:/app/output   sift-extractor images
+docker run --rm   -v local_path/to/images:/app/images   -v $(pwd)/results:/app/output   sift-extractor
 ```
 
 ### Arguments:
